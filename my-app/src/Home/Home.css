@@ -1,0 +1,33 @@
+
+
+
+.header{
+    text-align: center;
+    padding-top: 10px;
+   
+}
+th{
+    background-color: cadetblue;
+}
+
+#title{
+    border-style: dotted;
+    background-color: cadetblue;
+}
+
+table {
+    font-family: arial, sans-serif;
+    
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

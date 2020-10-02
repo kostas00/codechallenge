@@ -1,0 +1,14 @@
+CREATE TABLE links (
+employeeid int,
+skillid int,
+CONSTRAINT fk_employeeid FOREIGN KEY (employeeid) REFERENCES employees (id),
+CONSTRAINT fk_skillid FOREIGN KEY (skillid) REFERENCES skills (id)
+);
+
+
+query for all employees and their skills
+
+SELECT employees.id, employees.name, surname, skills.id, skills.name,skills.details
+	FROM public.employees
+	inner join links on employees.id=links.employeeid
+	inner join skills on links.skillid=skills.id
